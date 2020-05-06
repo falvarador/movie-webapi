@@ -7,6 +7,7 @@ namespace MovieWeb.WebApi.Extension
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Options;
     using MovieWeb.WebApi.Infraestructure;
+    using MovieWeb.WebApi.Service;
     using Swashbuckle.AspNetCore.Swagger;
     using Swashbuckle.AspNetCore.SwaggerGen;
     using Swashbuckle.AspNetCore.SwaggerUI;
@@ -16,30 +17,14 @@ namespace MovieWeb.WebApi.Extension
     {
         public static IServiceCollection AddServiceConfiguration(this IServiceCollection services)
         {
-            return null;
-            // return services
-            //     .AddTransient<ICantonService, CantonService>()
-            //     .AddTransient<ICatalogoGeneralService, CatalogoGeneralService>()
-            //     .AddTransient<ICodigoPostalService, CodigoPostalService>()
-            //     .AddTransient<ICierreService, CierreService>()
-            //     .AddTransient<IDistritoService, DistritoService>()
-            //     .AddTransient<IEstadoService, EstadoService>()
-            //     .AddTransient<IPaisService, PaisService>()                
-            //     .AddTransient<IProvinciaService, ProvinciaService>();
+            return services
+                .AddTransient<IMovieService, MovieService>();
         }
 
         public static IServiceCollection AddRepositoryConfiguration(this IServiceCollection services)
         {
-            return null;
-            // return services
-            //     .AddTransient<ICantonRepository, CantonRepository>()
-            //     .AddTransient<ICatalogoGeneralRepository, CatalogoGeneralRepository>()
-            //     .AddTransient<ICodigoPostalRepository, CodigoPostalRepository>()
-            //     .AddTransient<ICierreRepository, CierreRepository>()
-            //     .AddTransient<IDistritoRepository, DistritoRepository>()
-            //     .AddTransient<IEstadoRepository, EstadoRepository>()
-            //     .AddTransient<IPaisRepository, PaisRepository>()
-            //     .AddTransient<IProvinciaRepository, ProvinciaRepository>();
+            return services
+                .AddTransient<IMovieRepository, MovieRepository>();
         }
 
         public static IServiceCollection AddModelConfiguration(this IServiceCollection services)

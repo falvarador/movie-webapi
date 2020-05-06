@@ -13,7 +13,7 @@ namespace MovieWeb.WebApi.Infraestructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<MovieGender>().HasKey(x => new { x.GenderId, x.MovieId });
+            modelBuilder.ApplyConfiguration(new MovieGenderMapping());
             modelBuilder.Entity<MovieActor>().HasKey(x => new { x.MovieId, x.PersonId });
 
             // var people = new List<Person>();
