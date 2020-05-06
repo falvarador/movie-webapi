@@ -1,0 +1,9 @@
+# Visual Studio Code
+.vscode/
+
+# Build results
+src/bin/
+src/obj/
+
+# User-specific files
+src/Logs/
