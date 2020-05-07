@@ -24,8 +24,8 @@ namespace MovieWeb.WebApi.Model
                 
         public string ShortTitle { get; set; }
         
-        public ICollection<MovieActor> Actors { get; set; } = new HashSet<MovieActor>();
+        public ICollection<MovieActorViewModel> Actors { get; set; }
 
-        public ICollection<MovieGender> Genders { get; set; } = new HashSet<MovieGender>();
+        public ICollection<GenderViewModel> Genders { get; set; }
     }
 }

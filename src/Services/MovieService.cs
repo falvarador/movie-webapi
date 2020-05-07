@@ -26,9 +26,10 @@ namespace MovieWeb.WebApi.Service
             return _mapper.Map<MovieViewModel>(entity);
         }
     
-        public async Task<bool> InsertAsync(MovieViewModel entity)
+        public async Task<(bool isSuccess, int id )> InsertAsync(MovieViewModel entity)
         {
-            return await _repository.InsertAsync(_mapper.Map<Movie>(entity));
+            var result = await _repository.InsertAsync(_mapper.Map<Movie>(entity));
+            return (result, entity.Id);
         }
 
         public async Task<bool> UpdateAsync(MovieViewModel entity)

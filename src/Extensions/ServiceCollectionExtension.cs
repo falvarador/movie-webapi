@@ -18,7 +18,9 @@ namespace MovieWeb.WebApi.Extension
         public static IServiceCollection AddServiceConfiguration(this IServiceCollection services)
         {
             return services
-                .AddTransient<IMovieService, MovieService>();
+                .AddTransient<IGenderService, GenderService>()
+                .AddTransient<IMovieService, MovieService>()
+                .AddTransient<IPersonService, PersonService>();
         }
 
         public static IServiceCollection AddRepositoryConfiguration(this IServiceCollection services)

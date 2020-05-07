@@ -12,7 +12,7 @@ namespace MovieWeb.WebApi.Service
 
         Task<MovieViewModel> GetAsync(int id);
 
-        Task<bool> InsertAsync(MovieViewModel entity);
+       Task<(bool isSuccess, int id )> InsertAsync(MovieViewModel entity);
 
         Task<bool> UpdateAsync(MovieViewModel entity);
     }

@@ -12,24 +12,24 @@ namespace MovieWeb.WebApi.Controller.v1
 
     [ApiController, 
      ApiVersion(Versions.v1), 
-     Route("/api/v{version:apiVersion}/movies")]
-    public class MovieController : ControllerBase
+     Route("/api/v{version:apiVersion}/people")]
+    public class PersonController : ControllerBase
     {
-        private readonly IMovieService _service;
+        private readonly IPersonService _service;
 
-        public MovieController(IMovieService service)
+        public PersonController(IPersonService service)
         {
             _service = service ?? throw new ArgumentNullException(nameof(service));
         }
 
         /// <summary>
-        /// Description: Delete a movie from the system.
-        /// Creation date: 06/05/2020
+        /// Description: Delete a person from the system.
+        /// Creation date: 07/05/2020
         /// </summary>
-        /// <param name="id">Movie id</param>
-        /// <response code="204">Movie deleted successfully</response>
+        /// <param name="id">Person id</param>
+        /// <response code="204">Person deleted successfully</response>
         /// <response code="400">Bad request, verify the parameters sent or fulfillment of the validations</response>
-        /// <response code="404">Movie not deleted, the movie id entered was not found</response>
+        /// <response code="404">Person not deleted, the person id entered was not found</response>
         /// <response code="500">Sorry, the request could not be attended by the server</response>
         /// <returns>Operation indicator based on http code, does not return values</returns>
         [ProducesResponseType(typeof(BlankResponse), StatusCodes.Status204NoContent),
@@ -37,7 +37,7 @@ namespace MovieWeb.WebApi.Controller.v1
          ProducesResponseType(typeof(BlankResponse),  StatusCodes.Status404NotFound),
          ProducesResponseType(typeof(BaseResponse), StatusCodes.Status500InternalServerError),
          HttpDelete("{id:int}")]
-        public async Task<IActionResult> DeleteMovie(int id)
+        public async Task<IActionResult> DeletePerson(int id)
         {
             if (await _service.DeleteAsync(id))
                return NoContent();
@@ -46,20 +46,20 @@ namespace MovieWeb.WebApi.Controller.v1
         }
 
         /// <summary>
-        /// Description: Get all existing movies from the system.
-        /// Creation date: 06/05/2020
+        /// Description: Get all existing people from the system.
+        /// Creation date: 07/05/2020
         /// </summary>
-        /// <response code="200">Movies found</response>
+        /// <response code="200">People found</response>
         /// <response code="400">Bad request, verify the parameters sent or fulfillment of the validations</response>
-        /// <response code="404">Movies not found, there are no records to show</response>
+        /// <response code="404">People not found, there are no records to show</response>
         /// <response code="500">Sorry, the request could not be attended by the server</response>
-        /// <returns>List of recovered movies</returns>
-        [ProducesResponseType(typeof(List<MovieViewModel>), StatusCodes.Status200OK),
+        /// <returns>List of recovered people</returns>
+        [ProducesResponseType(typeof(List<PersonViewModel>), StatusCodes.Status200OK),
          ProducesResponseType(typeof(BaseResponse), StatusCodes.Status400BadRequest),
          ProducesResponseType(typeof(BlankResponse), StatusCodes.Status404NotFound),
          ProducesResponseType(typeof(BaseResponse), StatusCodes.Status500InternalServerError),
          HttpGet]
-        public async Task<IActionResult> GetAllMovies()
+        public async Task<IActionResult> GetAllPeople()
         {
             var entities = await _service.GetAllAsync();
 
@@ -70,21 +70,21 @@ namespace MovieWeb.WebApi.Controller.v1
         }
 
         /// <summary>
-        /// Description: Gets a movie from the system.
-        /// Creation date: 06/05/2020
+        /// Description: Gets a person from the system.
+        /// Creation date: 07/05/2020
         /// </summary>
-        /// <param name="id">Movie id</param>
-        /// <response code="200">Movies found</response>
+        /// <param name="id">Person id</param>
+        /// <response code="200">Person found</response>
         /// <response code="400">Bad request, verify the parameters sent or fulfillment of the validations</response>
-        /// <response code="404">Movie not found, the movie id entered was not found</response>
+        /// <response code="404">Person not found, the person id entered was not found</response>
         /// <response code="500">Sorry, the request could not be attended by the server</response>
-        /// <returns>Movie recovered</returns>
-        [ProducesResponseType(typeof(MovieViewModel), StatusCodes.Status200OK),
+        /// <returns>Person recovered</returns>
+        [ProducesResponseType(typeof(PersonViewModel), StatusCodes.Status200OK),
          ProducesResponseType(typeof(BaseResponse), StatusCodes.Status400BadRequest),
          ProducesResponseType(typeof(BlankResponse), StatusCodes.Status404NotFound),
          ProducesResponseType(typeof(BaseResponse), StatusCodes.Status500InternalServerError),
          HttpGet("{id:int}")]
-        public async Task<IActionResult> GetMovie(int id)
+        public async Task<IActionResult> GetPerson(int id)
         {
             var entity = await _service.GetAsync(id);
 
@@ -95,12 +95,12 @@ namespace MovieWeb.WebApi.Controller.v1
         }
 
         /// <summary>
-        /// Description: Add a new movie.
-        /// Creation date: 06/05/2020
+        /// Description: Add a new person.
+        /// Creation date: 07/05/2020
         /// </summary>
         /// <param name="apiVersion">Api version</param>
-        /// <param name="model">Represents a property model for a movie, check the detail in the schematics section</param>
-        /// <response code="201">Movie created successfully, return the movie id</response>
+        /// <param name="model">Represents a property model for a person, check the detail in the schematics section</param>
+        /// <response code="201">Person created successfully, return the person id</response>
         /// <response code="400">Bad request, verify the parameters sent or fulfillment of the validations</response>
         /// <response code="500">Sorry, the request could not be attended by the server</response>
         /// <returns>Operation indicator based on http code, does not return values</returns>
@@ -108,24 +108,24 @@ namespace MovieWeb.WebApi.Controller.v1
          ProducesResponseType(typeof(BaseResponse), StatusCodes.Status400BadRequest),
          ProducesResponseType(typeof(BaseResponse), StatusCodes.Status500InternalServerError),
          HttpPost]
-        public async Task<IActionResult> InsertMovie([FromBody] MovieViewModel model, ApiVersion apiVersion)
+        public async Task<IActionResult> InsertPerson([FromBody] PersonViewModel model, ApiVersion apiVersion)
         {
             var (isSuccess, id) = await _service.InsertAsync(model);
 
             if (isSuccess)
-                return CreatedAtAction(nameof(GetMovie), new { id, version = apiVersion.ToString() }, id);
+                return CreatedAtAction(nameof(GetPerson), new { id, version = apiVersion.ToString() }, id);
             else
                 return BadRequest();
         }
 
         /// <summary>
-        /// Description: Update a movie.
-        /// Creation date: 06/05/2020
+        /// Description: Update a person.
+        /// Creation date: 07/05/2020
         /// </summary>
-        /// <param name="model">Represents a property model for a movie, check the detail in the schematics section</param>
-        /// <response code="204">Movie successfully updated</response>
+        /// <param name="model">Represents a property model for a person, check the detail in the schematics section</param>
+        /// <response code="204">Person successfully updated</response>
         /// <response code="400">Bad request, verify the parameters sent or fulfillment of the validations</response>
-        /// <response code="404">Movie not update, the movie id entered was not found</response>
+        /// <response code="404">Person not update, the person id entered was not found</response>
         /// <response code="500">Sorry, the request could not be attended by the server</response>
         /// <returns>Operation indicator based on http code, does not return values</returns>
         [ProducesResponseType(typeof(BlankResponse), StatusCodes.Status204NoContent),
@@ -133,7 +133,7 @@ namespace MovieWeb.WebApi.Controller.v1
          ProducesResponseType(typeof(BlankResponse), StatusCodes.Status404NotFound),
          ProducesResponseType(typeof(BaseResponse), StatusCodes.Status500InternalServerError),
          HttpPut]        
-        public async Task<IActionResult> UpdateMovie([FromBody] MovieViewModel model)
+        public async Task<IActionResult> UpdatePerson([FromBody] PersonViewModel model)
         {
             if (await _service.UpdateAsync(model))
                 return NoContent();
@@ -142,14 +142,14 @@ namespace MovieWeb.WebApi.Controller.v1
         }
 
         /// <summary>
-        /// Description: Partially update a movie.
-        /// Creation date: 06/05/2020
+        /// Description: Partially update a person.
+        /// Creation date: 07/05/2020
         /// </summary>
-        /// <param name="id">Movie id</param>
-        /// <param name="model">Represents a property model for a movie, check the detail in the schematics section</param>
-        /// <response code="204">Movie successfully updated</response>
+        /// <param name="id">Person id</param>
+        /// <param name="model">Represents a property model for a person, check the detail in the schematics section</param>
+        /// <response code="204">Person successfully updated</response>
         /// <response code="400">Bad request, verify the parameters sent or fulfillment of the validations</response>
-        /// <response code="404">Movie not update, the movie id entered was not found</response>
+        /// <response code="404">Person not update, the person id entered was not found</response>
         /// <response code="500">Sorry, the request could not be attended by the server</response>
         /// <returns>Operation indicator based on http code, does not return values</returns>
         [ProducesResponseType(typeof(BlankResponse), StatusCodes.Status204NoContent),
@@ -157,7 +157,7 @@ namespace MovieWeb.WebApi.Controller.v1
          ProducesResponseType(typeof(BlankResponse), StatusCodes.Status404NotFound),
          ProducesResponseType(typeof(BaseResponse), StatusCodes.Status500InternalServerError),
          HttpPatch("{id:int}")]
-        public async Task<IActionResult> UpdatePartialMovie(int id, [FromBody] JsonPatchDocument<MovieViewModel> model)
+        public async Task<IActionResult> UpdatePartialPerson(int id, [FromBody] JsonPatchDocument<PersonViewModel> model)
         {
             var entity = await _service.GetAsync(id);
            if (entity is null)
