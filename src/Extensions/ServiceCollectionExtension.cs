@@ -6,6 +6,7 @@ namespace MovieWeb.WebApi.Extension
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Options;
+    using MovieWeb.WebApi.Helper;
     using MovieWeb.WebApi.Infraestructure;
     using MovieWeb.WebApi.Service;
     using Swashbuckle.AspNetCore.Swagger;
@@ -33,6 +34,13 @@ namespace MovieWeb.WebApi.Extension
         {
             return services            
                 .AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+        }
+
+        public static IServiceCollection AddHelperConfiguration(this IServiceCollection services) 
+        {
+            return services
+                .AddHttpContextAccessor()
+                .AddTransient<ILocalFileStorage, LocalFileStorage>();
         }
 
         public static IServiceCollection AddDbConnectionAndProvider(this IServiceCollection services, IConfiguration configuration)

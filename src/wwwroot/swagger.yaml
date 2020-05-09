@@ -1,0 +1,5313 @@
+info:
+  title: Movie Web Service API
+  description: Movie Web Service API - Test & Documentation Page, <a href='/swagger.yaml'>download swagger.yaml</a> - SUPPORTED VERSION
+  version: 1
+  termsOfService: &o0
+    absolutePath: /
+    absoluteUri: *o0
+    localPath: /
+    authority: www.ompixcorporation.com
+    hostNameType: Dns
+    isDefaultPort: true
+    pathAndQuery: /
+    segments:
+    - /
+    host: www.ompixcorporation.com
+    port: 80
+    query: ''
+    fragment: ''
+    scheme: http
+    originalString: *o0
+    dnsSafeHost: www.ompixcorporation.com
+    idnHost: www.ompixcorporation.com
+    isAbsoluteUri: true
+    userInfo: ''
+  contact:
+    name: Customer Service
+    url: &o1
+      absolutePath: /help/
+      absoluteUri: *o1
+      localPath: /help/
+      authority: www.ompixcorporation.com
+      hostNameType: Dns
+      isDefaultPort: true
+      pathAndQuery: /help/
+      segments:
+      - /
+      - help/
+      host: www.ompixcorporation.com
+      port: 80
+      query: ''
+      fragment: ''
+      scheme: http
+      originalString: *o1
+      dnsSafeHost: www.ompixcorporation.com
+      idnHost: www.ompixcorporation.com
+      isAbsoluteUri: true
+      userInfo: ''
+    email: alvaguez1990@gmail.com
+  license:
+    name: Ompix. ® Derechos Reservados
+    url: *o0
+servers: []
+paths:
+  /api/v1/genders/{id}:
+    operations:
+      Delete:
+        tags:
+        - name: Gender
+        summary: >-
+          Description: Delete a gender from the system.
+
+          Creation date: 07/05/2020
+        parameters:
+        - name: id
+          in: Path
+          description: Gender id
+          required: true
+          schema:
+            type: integer
+            format: int32
+            description: Gender id
+            allOf: []
+            oneOf: []
+            anyOf: []
+            required: []
+            properties: {}
+            additionalPropertiesAllowed: true
+            enum: []
+          examples: {}
+          content: {}
+        responses:
+          204:
+            description: Gender deleted successfully
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          404:
+            description: Gender not deleted, the gender id entered was not found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+      Get:
+        tags:
+        - name: Gender
+        summary: >-
+          Description: Gets a gender from the system.
+
+          Creation date: 07/05/2020
+        parameters:
+        - name: id
+          in: Path
+          description: Gender id
+          required: true
+          schema:
+            type: integer
+            format: int32
+            description: Gender id
+            allOf: []
+            oneOf: []
+            anyOf: []
+            required: []
+            properties: {}
+            additionalPropertiesAllowed: true
+            enum: []
+          examples: {}
+          content: {}
+        responses:
+          200:
+            description: Gender found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: GenderViewModel
+                    isLocal: true
+                    referenceV3: '#/components/schemas/GenderViewModel'
+                    referenceV2: '#/definitions/GenderViewModel'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: GenderViewModel
+                    isLocal: true
+                    referenceV3: '#/components/schemas/GenderViewModel'
+                    referenceV2: '#/definitions/GenderViewModel'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: GenderViewModel
+                    isLocal: true
+                    referenceV3: '#/components/schemas/GenderViewModel'
+                    referenceV2: '#/definitions/GenderViewModel'
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          404:
+            description: Gender not found, the gender id entered was not found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+      Patch:
+        tags:
+        - name: Gender
+        summary: >-
+          Description: Partially update a gender.
+
+          Creation date: 07/05/2020
+        parameters:
+        - name: id
+          in: Path
+          description: Gender id
+          required: true
+          schema:
+            type: integer
+            format: int32
+            description: Gender id
+            allOf: []
+            oneOf: []
+            anyOf: []
+            required: []
+            properties: {}
+            additionalPropertiesAllowed: true
+            enum: []
+          examples: {}
+          content: {}
+        requestBody:
+          description: Represents a property model for a gender, check the detail in the schematics section
+          content:
+            application/json:
+              schema: &o2
+                allOf: []
+                oneOf: []
+                anyOf: []
+                required: []
+                properties: {}
+                additionalPropertiesAllowed: true
+                enum: []
+                reference:
+                  type: Schema
+                  id: GenderViewModelJsonPatchDocument
+                  isLocal: true
+                  referenceV3: '#/components/schemas/GenderViewModelJsonPatchDocument'
+                  referenceV2: '#/definitions/GenderViewModelJsonPatchDocument'
+              examples: {}
+              encoding: {}
+            text/json:
+              schema: *o2
+              examples: {}
+              encoding: {}
+            application/*+json:
+              schema: *o2
+              examples: {}
+              encoding: {}
+        responses:
+          204:
+            description: Gender successfully updated
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          404:
+            description: Gender not update, the gender id entered was not found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+    servers: []
+    parameters: []
+  /api/v1/genders:
+    operations:
+      Get:
+        tags:
+        - name: Gender
+        summary: >-
+          Description: Get all existing genders from the system.
+
+          Creation date: 07/05/2020
+        parameters: []
+        responses:
+          200:
+            description: Genders found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  type: array
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  items:
+                    allOf: []
+                    oneOf: []
+                    anyOf: []
+                    required: []
+                    properties: {}
+                    additionalPropertiesAllowed: true
+                    enum: []
+                    reference:
+                      type: Schema
+                      id: GenderViewModel
+                      isLocal: true
+                      referenceV3: '#/components/schemas/GenderViewModel'
+                      referenceV2: '#/definitions/GenderViewModel'
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  type: array
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  items:
+                    allOf: []
+                    oneOf: []
+                    anyOf: []
+                    required: []
+                    properties: {}
+                    additionalPropertiesAllowed: true
+                    enum: []
+                    reference:
+                      type: Schema
+                      id: GenderViewModel
+                      isLocal: true
+                      referenceV3: '#/components/schemas/GenderViewModel'
+                      referenceV2: '#/definitions/GenderViewModel'
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  type: array
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  items:
+                    allOf: []
+                    oneOf: []
+                    anyOf: []
+                    required: []
+                    properties: {}
+                    additionalPropertiesAllowed: true
+                    enum: []
+                    reference:
+                      type: Schema
+                      id: GenderViewModel
+                      isLocal: true
+                      referenceV3: '#/components/schemas/GenderViewModel'
+                      referenceV2: '#/definitions/GenderViewModel'
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          404:
+            description: Genders not found, there are no records to show
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+      Post:
+        tags:
+        - name: Gender
+        summary: >-
+          Description: Add a new gender.
+
+          Creation date: 07/05/2020
+        parameters: []
+        requestBody:
+          description: Represents a property model for a gender, check the detail in the schematics section
+          content:
+            application/json:
+              schema: &o3
+                allOf: []
+                oneOf: []
+                anyOf: []
+                required: []
+                properties: {}
+                additionalPropertiesAllowed: true
+                enum: []
+                reference:
+                  type: Schema
+                  id: InsertGenderViewModel
+                  isLocal: true
+                  referenceV3: '#/components/schemas/InsertGenderViewModel'
+                  referenceV2: '#/definitions/InsertGenderViewModel'
+              examples: {}
+              encoding: {}
+            text/json:
+              schema: *o3
+              examples: {}
+              encoding: {}
+            application/*+json:
+              schema: *o3
+              examples: {}
+              encoding: {}
+        responses:
+          201:
+            description: Gender created successfully, return the gender id
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  type: integer
+                  format: int32
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  type: integer
+                  format: int32
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  type: integer
+                  format: int32
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+      Put:
+        tags:
+        - name: Gender
+        summary: >-
+          Description: Update a gender.
+
+          Creation date: 07/05/2020
+        parameters: []
+        requestBody:
+          description: Represents a property model for a gender, check the detail in the schematics section
+          content:
+            application/json:
+              schema: &o4
+                allOf: []
+                oneOf: []
+                anyOf: []
+                required: []
+                properties: {}
+                additionalPropertiesAllowed: true
+                enum: []
+                reference:
+                  type: Schema
+                  id: GenderViewModel
+                  isLocal: true
+                  referenceV3: '#/components/schemas/GenderViewModel'
+                  referenceV2: '#/definitions/GenderViewModel'
+              examples: {}
+              encoding: {}
+            text/json:
+              schema: *o4
+              examples: {}
+              encoding: {}
+            application/*+json:
+              schema: *o4
+              examples: {}
+              encoding: {}
+        responses:
+          204:
+            description: Gender successfully updated
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          404:
+            description: Gender not update, the gender id entered was not found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+    servers: []
+    parameters: []
+  /api/v1/movies/{id}:
+    operations:
+      Delete:
+        tags:
+        - name: Movie
+        summary: >-
+          Description: Delete a movie from the system.
+
+          Creation date: 06/05/2020
+        parameters:
+        - name: id
+          in: Path
+          description: Movie id
+          required: true
+          schema:
+            type: integer
+            format: int32
+            description: Movie id
+            allOf: []
+            oneOf: []
+            anyOf: []
+            required: []
+            properties: {}
+            additionalPropertiesAllowed: true
+            enum: []
+          examples: {}
+          content: {}
+        responses:
+          204:
+            description: Movie deleted successfully
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          404:
+            description: Movie not deleted, the movie id entered was not found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+      Get:
+        tags:
+        - name: Movie
+        summary: >-
+          Description: Gets a movie from the system.
+
+          Creation date: 06/05/2020
+        parameters:
+        - name: id
+          in: Path
+          description: Movie id
+          required: true
+          schema:
+            type: integer
+            format: int32
+            description: Movie id
+            allOf: []
+            oneOf: []
+            anyOf: []
+            required: []
+            properties: {}
+            additionalPropertiesAllowed: true
+            enum: []
+          examples: {}
+          content: {}
+        responses:
+          200:
+            description: Movies found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: MovieViewModel
+                    isLocal: true
+                    referenceV3: '#/components/schemas/MovieViewModel'
+                    referenceV2: '#/definitions/MovieViewModel'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: MovieViewModel
+                    isLocal: true
+                    referenceV3: '#/components/schemas/MovieViewModel'
+                    referenceV2: '#/definitions/MovieViewModel'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: MovieViewModel
+                    isLocal: true
+                    referenceV3: '#/components/schemas/MovieViewModel'
+                    referenceV2: '#/definitions/MovieViewModel'
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          404:
+            description: Movie not found, the movie id entered was not found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+      Patch:
+        tags:
+        - name: Movie
+        summary: >-
+          Description: Partially update a movie.
+
+          Creation date: 06/05/2020
+        parameters:
+        - name: id
+          in: Path
+          description: Movie id
+          required: true
+          schema:
+            type: integer
+            format: int32
+            description: Movie id
+            allOf: []
+            oneOf: []
+            anyOf: []
+            required: []
+            properties: {}
+            additionalPropertiesAllowed: true
+            enum: []
+          examples: {}
+          content: {}
+        requestBody:
+          description: Represents a property model for a movie, check the detail in the schematics section
+          content:
+            application/json:
+              schema: &o5
+                allOf: []
+                oneOf: []
+                anyOf: []
+                required: []
+                properties: {}
+                additionalPropertiesAllowed: true
+                enum: []
+                reference:
+                  type: Schema
+                  id: MovieViewModelJsonPatchDocument
+                  isLocal: true
+                  referenceV3: '#/components/schemas/MovieViewModelJsonPatchDocument'
+                  referenceV2: '#/definitions/MovieViewModelJsonPatchDocument'
+              examples: {}
+              encoding: {}
+            text/json:
+              schema: *o5
+              examples: {}
+              encoding: {}
+            application/*+json:
+              schema: *o5
+              examples: {}
+              encoding: {}
+        responses:
+          204:
+            description: Movie successfully updated
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          404:
+            description: Movie not update, the movie id entered was not found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+    servers: []
+    parameters: []
+  /api/v1/movies:
+    operations:
+      Get:
+        tags:
+        - name: Movie
+        summary: >-
+          Description: Get all existing movies from the system.
+
+          Creation date: 06/05/2020
+        parameters: []
+        responses:
+          200:
+            description: Movies found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  type: array
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  items:
+                    allOf: []
+                    oneOf: []
+                    anyOf: []
+                    required: []
+                    properties: {}
+                    additionalPropertiesAllowed: true
+                    enum: []
+                    reference:
+                      type: Schema
+                      id: MovieViewModel
+                      isLocal: true
+                      referenceV3: '#/components/schemas/MovieViewModel'
+                      referenceV2: '#/definitions/MovieViewModel'
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  type: array
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  items:
+                    allOf: []
+                    oneOf: []
+                    anyOf: []
+                    required: []
+                    properties: {}
+                    additionalPropertiesAllowed: true
+                    enum: []
+                    reference:
+                      type: Schema
+                      id: MovieViewModel
+                      isLocal: true
+                      referenceV3: '#/components/schemas/MovieViewModel'
+                      referenceV2: '#/definitions/MovieViewModel'
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  type: array
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  items:
+                    allOf: []
+                    oneOf: []
+                    anyOf: []
+                    required: []
+                    properties: {}
+                    additionalPropertiesAllowed: true
+                    enum: []
+                    reference:
+                      type: Schema
+                      id: MovieViewModel
+                      isLocal: true
+                      referenceV3: '#/components/schemas/MovieViewModel'
+                      referenceV2: '#/definitions/MovieViewModel'
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          404:
+            description: Movies not found, there are no records to show
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+      Post:
+        tags:
+        - name: Movie
+        summary: >-
+          Description: Add a new movie.
+
+          Creation date: 06/05/2020
+        parameters: []
+        requestBody:
+          description: Represents a property model for a movie, check the detail in the schematics section
+          content:
+            application/json:
+              schema: &o6
+                allOf: []
+                oneOf: []
+                anyOf: []
+                required: []
+                properties: {}
+                additionalPropertiesAllowed: true
+                enum: []
+                reference:
+                  type: Schema
+                  id: MovieViewModel
+                  isLocal: true
+                  referenceV3: '#/components/schemas/MovieViewModel'
+                  referenceV2: '#/definitions/MovieViewModel'
+              examples: {}
+              encoding: {}
+            text/json:
+              schema: *o6
+              examples: {}
+              encoding: {}
+            application/*+json:
+              schema: *o6
+              examples: {}
+              encoding: {}
+        responses:
+          201:
+            description: Movie created successfully, return the movie id
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  type: integer
+                  format: int32
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  type: integer
+                  format: int32
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  type: integer
+                  format: int32
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+      Put:
+        tags:
+        - name: Movie
+        summary: >-
+          Description: Update a movie.
+
+          Creation date: 06/05/2020
+        parameters: []
+        requestBody:
+          description: Represents a property model for a movie, check the detail in the schematics section
+          content:
+            application/json:
+              schema: &o7
+                allOf: []
+                oneOf: []
+                anyOf: []
+                required: []
+                properties: {}
+                additionalPropertiesAllowed: true
+                enum: []
+                reference:
+                  type: Schema
+                  id: MovieViewModel
+                  isLocal: true
+                  referenceV3: '#/components/schemas/MovieViewModel'
+                  referenceV2: '#/definitions/MovieViewModel'
+              examples: {}
+              encoding: {}
+            text/json:
+              schema: *o7
+              examples: {}
+              encoding: {}
+            application/*+json:
+              schema: *o7
+              examples: {}
+              encoding: {}
+        responses:
+          204:
+            description: Movie successfully updated
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          404:
+            description: Movie not update, the movie id entered was not found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+    servers: []
+    parameters: []
+  /api/v1/people/{id}:
+    operations:
+      Delete:
+        tags:
+        - name: Person
+        summary: >-
+          Description: Delete a person from the system.
+
+          Creation date: 07/05/2020
+        parameters:
+        - name: id
+          in: Path
+          description: Person id
+          required: true
+          schema:
+            type: integer
+            format: int32
+            description: Person id
+            allOf: []
+            oneOf: []
+            anyOf: []
+            required: []
+            properties: {}
+            additionalPropertiesAllowed: true
+            enum: []
+          examples: {}
+          content: {}
+        responses:
+          204:
+            description: Person deleted successfully
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          404:
+            description: Person not deleted, the person id entered was not found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+      Get:
+        tags:
+        - name: Person
+        summary: >-
+          Description: Gets a person from the system.
+
+          Creation date: 07/05/2020
+        parameters:
+        - name: id
+          in: Path
+          description: Person id
+          required: true
+          schema:
+            type: integer
+            format: int32
+            description: Person id
+            allOf: []
+            oneOf: []
+            anyOf: []
+            required: []
+            properties: {}
+            additionalPropertiesAllowed: true
+            enum: []
+          examples: {}
+          content: {}
+        responses:
+          200:
+            description: Person found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: PersonViewModel
+                    isLocal: true
+                    referenceV3: '#/components/schemas/PersonViewModel'
+                    referenceV2: '#/definitions/PersonViewModel'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: PersonViewModel
+                    isLocal: true
+                    referenceV3: '#/components/schemas/PersonViewModel'
+                    referenceV2: '#/definitions/PersonViewModel'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: PersonViewModel
+                    isLocal: true
+                    referenceV3: '#/components/schemas/PersonViewModel'
+                    referenceV2: '#/definitions/PersonViewModel'
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          404:
+            description: Person not found, the person id entered was not found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+      Patch:
+        tags:
+        - name: Person
+        summary: >-
+          Description: Partially update a person.
+
+          Creation date: 07/05/2020
+        parameters:
+        - name: id
+          in: Path
+          description: Person id
+          required: true
+          schema:
+            type: integer
+            format: int32
+            description: Person id
+            allOf: []
+            oneOf: []
+            anyOf: []
+            required: []
+            properties: {}
+            additionalPropertiesAllowed: true
+            enum: []
+          examples: {}
+          content: {}
+        requestBody:
+          description: Represents a property model for a person, check the detail in the schematics section
+          content:
+            application/json:
+              schema: &o8
+                allOf: []
+                oneOf: []
+                anyOf: []
+                required: []
+                properties: {}
+                additionalPropertiesAllowed: true
+                enum: []
+                reference:
+                  type: Schema
+                  id: PersonViewModelJsonPatchDocument
+                  isLocal: true
+                  referenceV3: '#/components/schemas/PersonViewModelJsonPatchDocument'
+                  referenceV2: '#/definitions/PersonViewModelJsonPatchDocument'
+              examples: {}
+              encoding: {}
+            text/json:
+              schema: *o8
+              examples: {}
+              encoding: {}
+            application/*+json:
+              schema: *o8
+              examples: {}
+              encoding: {}
+        responses:
+          204:
+            description: Person successfully updated
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          404:
+            description: Person not update, the person id entered was not found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+    servers: []
+    parameters: []
+  /api/v1/people:
+    operations:
+      Get:
+        tags:
+        - name: Person
+        summary: >-
+          Description: Get all existing people from the system.
+
+          Creation date: 07/05/2020
+        parameters: []
+        responses:
+          200:
+            description: People found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  type: array
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  items:
+                    allOf: []
+                    oneOf: []
+                    anyOf: []
+                    required: []
+                    properties: {}
+                    additionalPropertiesAllowed: true
+                    enum: []
+                    reference:
+                      type: Schema
+                      id: PersonViewModel
+                      isLocal: true
+                      referenceV3: '#/components/schemas/PersonViewModel'
+                      referenceV2: '#/definitions/PersonViewModel'
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  type: array
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  items:
+                    allOf: []
+                    oneOf: []
+                    anyOf: []
+                    required: []
+                    properties: {}
+                    additionalPropertiesAllowed: true
+                    enum: []
+                    reference:
+                      type: Schema
+                      id: PersonViewModel
+                      isLocal: true
+                      referenceV3: '#/components/schemas/PersonViewModel'
+                      referenceV2: '#/definitions/PersonViewModel'
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  type: array
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  items:
+                    allOf: []
+                    oneOf: []
+                    anyOf: []
+                    required: []
+                    properties: {}
+                    additionalPropertiesAllowed: true
+                    enum: []
+                    reference:
+                      type: Schema
+                      id: PersonViewModel
+                      isLocal: true
+                      referenceV3: '#/components/schemas/PersonViewModel'
+                      referenceV2: '#/definitions/PersonViewModel'
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          404:
+            description: People not found, there are no records to show
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+      Post:
+        tags:
+        - name: Person
+        summary: >-
+          Description: Add a new person.
+
+          Creation date: 07/05/2020
+        parameters: []
+        requestBody:
+          description: Represents a property model for a person, check the detail in the schematics section
+          content:
+            application/json:
+              schema: &o9
+                allOf: []
+                oneOf: []
+                anyOf: []
+                required: []
+                properties: {}
+                additionalPropertiesAllowed: true
+                enum: []
+                reference:
+                  type: Schema
+                  id: PersonViewModel
+                  isLocal: true
+                  referenceV3: '#/components/schemas/PersonViewModel'
+                  referenceV2: '#/definitions/PersonViewModel'
+              examples: {}
+              encoding: {}
+            text/json:
+              schema: *o9
+              examples: {}
+              encoding: {}
+            application/*+json:
+              schema: *o9
+              examples: {}
+              encoding: {}
+        responses:
+          201:
+            description: Person created successfully, return the person id
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  type: integer
+                  format: int32
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  type: integer
+                  format: int32
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  type: integer
+                  format: int32
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+      Put:
+        tags:
+        - name: Person
+        summary: >-
+          Description: Update a person.
+
+          Creation date: 07/05/2020
+        parameters: []
+        requestBody:
+          description: Represents a property model for a person, check the detail in the schematics section
+          content:
+            application/json:
+              schema: &o10
+                allOf: []
+                oneOf: []
+                anyOf: []
+                required: []
+                properties: {}
+                additionalPropertiesAllowed: true
+                enum: []
+                reference:
+                  type: Schema
+                  id: PersonViewModel
+                  isLocal: true
+                  referenceV3: '#/components/schemas/PersonViewModel'
+                  referenceV2: '#/definitions/PersonViewModel'
+              examples: {}
+              encoding: {}
+            text/json:
+              schema: *o10
+              examples: {}
+              encoding: {}
+            application/*+json:
+              schema: *o10
+              examples: {}
+              encoding: {}
+        responses:
+          204:
+            description: Person successfully updated
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          400:
+            description: Bad request, verify the parameters sent or fulfillment of the validations
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          404:
+            description: Person not update, the person id entered was not found
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BlankResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BlankResponse'
+                    referenceV2: '#/definitions/BlankResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Sorry, the request could not be attended by the server
+            headers: {}
+            content:
+              text/plain:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+              text/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+    servers: []
+    parameters: []
+components:
+  schemas:
+    BlankResponse:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required: []
+      properties: {}
+      enum: []
+    BaseResponse:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required: []
+      properties:
+        isSuccessful:
+          type: boolean
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+        message:
+          type: object
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          enum: []
+          nullable: true
+        httpStatusCode:
+          type: integer
+          format: int32
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+        messageDetail:
+          type: string
+          readOnly: true
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+      enum: []
+    GenderViewModel:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required:
+      - name
+      properties:
+        id:
+          type: integer
+          format: int32
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+        name:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+      enum: []
+    OperationType:
+      type: integer
+      format: int32
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required: []
+      properties: {}
+      additionalPropertiesAllowed: true
+      enum:
+      - {}
+      - value: 1
+      - value: 2
+      - value: 3
+      - value: 4
+      - value: 5
+      - value: 6
+    GenderViewModelOperation:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required: []
+      properties:
+        value:
+          type: object
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          enum: []
+          nullable: true
+        operationType:
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          reference:
+            type: Schema
+            id: OperationType
+            isLocal: true
+            referenceV3: '#/components/schemas/OperationType'
+            referenceV2: '#/definitions/OperationType'
+        path:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        op:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        from:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+      enum: []
+    IContractResolver:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required: []
+      properties: {}
+      enum: []
+    GenderViewModelJsonPatchDocument:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required: []
+      properties:
+        operations:
+          type: array
+          readOnly: true
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          items:
+            allOf: []
+            oneOf: []
+            anyOf: []
+            required: []
+            properties: {}
+            additionalPropertiesAllowed: true
+            enum: []
+            reference:
+              type: Schema
+              id: GenderViewModelOperation
+              isLocal: true
+              referenceV3: '#/components/schemas/GenderViewModelOperation'
+              referenceV2: '#/definitions/GenderViewModelOperation'
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        contractResolver:
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          reference:
+            type: Schema
+            id: IContractResolver
+            isLocal: true
+            referenceV3: '#/components/schemas/IContractResolver'
+            referenceV2: '#/definitions/IContractResolver'
+      enum: []
+    InsertGenderViewModel:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required:
+      - name
+      properties:
+        name:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+      enum: []
+    MovieActorViewModel:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required: []
+      properties:
+        personId:
+          type: integer
+          format: int32
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+        movieId:
+          type: integer
+          format: int32
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+        character:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        order:
+          type: integer
+          format: int32
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+      enum: []
+    MovieViewModel:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required:
+      - releaseDate
+      - title
+      properties:
+        id:
+          type: integer
+          format: int32
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+        title:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+        summary:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        isInTheaters:
+          type: boolean
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+        trailer:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        releaseDate:
+          type: string
+          format: date-time
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+        poster:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        shortTitle:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        actors:
+          type: array
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          items:
+            allOf: []
+            oneOf: []
+            anyOf: []
+            required: []
+            properties: {}
+            additionalPropertiesAllowed: true
+            enum: []
+            reference:
+              type: Schema
+              id: MovieActorViewModel
+              isLocal: true
+              referenceV3: '#/components/schemas/MovieActorViewModel'
+              referenceV2: '#/definitions/MovieActorViewModel'
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        genders:
+          type: array
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          items:
+            allOf: []
+            oneOf: []
+            anyOf: []
+            required: []
+            properties: {}
+            additionalPropertiesAllowed: true
+            enum: []
+            reference:
+              type: Schema
+              id: GenderViewModel
+              isLocal: true
+              referenceV3: '#/components/schemas/GenderViewModel'
+              referenceV2: '#/definitions/GenderViewModel'
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+      enum: []
+    MovieViewModelOperation:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required: []
+      properties:
+        value:
+          type: object
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          enum: []
+          nullable: true
+        operationType:
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          reference:
+            type: Schema
+            id: OperationType
+            isLocal: true
+            referenceV3: '#/components/schemas/OperationType'
+            referenceV2: '#/definitions/OperationType'
+        path:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        op:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        from:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+      enum: []
+    MovieViewModelJsonPatchDocument:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required: []
+      properties:
+        operations:
+          type: array
+          readOnly: true
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          items:
+            allOf: []
+            oneOf: []
+            anyOf: []
+            required: []
+            properties: {}
+            additionalPropertiesAllowed: true
+            enum: []
+            reference:
+              type: Schema
+              id: MovieViewModelOperation
+              isLocal: true
+              referenceV3: '#/components/schemas/MovieViewModelOperation'
+              referenceV2: '#/definitions/MovieViewModelOperation'
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        contractResolver:
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          reference:
+            type: Schema
+            id: IContractResolver
+            isLocal: true
+            referenceV3: '#/components/schemas/IContractResolver'
+            referenceV2: '#/definitions/IContractResolver'
+      enum: []
+    PersonViewModel:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required:
+      - birthdate
+      - name
+      properties:
+        id:
+          type: integer
+          format: int32
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+        name:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+        biography:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        photo:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        birthdate:
+          type: string
+          format: date-time
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+      enum: []
+    PersonViewModelOperation:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required: []
+      properties:
+        value:
+          type: object
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          enum: []
+          nullable: true
+        operationType:
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          reference:
+            type: Schema
+            id: OperationType
+            isLocal: true
+            referenceV3: '#/components/schemas/OperationType'
+            referenceV2: '#/definitions/OperationType'
+        path:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        op:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        from:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+      enum: []
+    PersonViewModelJsonPatchDocument:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required: []
+      properties:
+        operations:
+          type: array
+          readOnly: true
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          items:
+            allOf: []
+            oneOf: []
+            anyOf: []
+            required: []
+            properties: {}
+            additionalPropertiesAllowed: true
+            enum: []
+            reference:
+              type: Schema
+              id: PersonViewModelOperation
+              isLocal: true
+              referenceV3: '#/components/schemas/PersonViewModelOperation'
+              referenceV2: '#/definitions/PersonViewModelOperation'
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        contractResolver:
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          reference:
+            type: Schema
+            id: IContractResolver
+            isLocal: true
+            referenceV3: '#/components/schemas/IContractResolver'
+            referenceV2: '#/definitions/IContractResolver'
+      enum: []
+  responses: {}
+  parameters: {}
+  examples: {}
+  requestBodies: {}
+  headers: {}
+  securitySchemes: {}
+  links: {}
+  callbacks: {}
+securityRequirements: []
+tags: []
+

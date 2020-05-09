@@ -48,6 +48,7 @@ namespace MovieWeb.WebApi
                 .AddServiceConfiguration()
                 .AddRepositoryConfiguration()
                 .AddModelConfiguration()
+                .AddHelperConfiguration()
                 .AddDbConnectionAndProvider(Configuration)
                 .AddApiVersionWithExplorer()
                 .AddSwaggerOptions()
