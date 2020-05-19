@@ -13,9 +13,14 @@ namespace MovieWeb.WebApi.Service
     {
         public async Task<bool> DeleteAsync(int id)
         {
-            var entity = await GetAsync(id);
+            var exist = await _context.Genders.AnyAsync(x => x.Id == id);
 
-            _context.Genders.Remove(_mapper.Map<Gender>(entity));
+            if (!exist)
+            {
+                return false;
+            }
+
+            _context.Remove(new Gender { Id = id });
             return await _context.SaveChangesAsync().ToBooleanAsync();
         }
 

@@ -14,9 +14,14 @@ namespace MovieWeb.WebApi.Service
     {
         public async Task<bool> DeleteAsync(int id)
         {
-            var entity = await GetAsync(id);
+            var exist = await _context.People.AnyAsync(x => x.Id == id);
 
-            _context.People.Remove(_mapper.Map<Person>(entity));
+            if (!exist)
+            {
+                return false;
+            }
+
+            _context.Remove(new Person { Id = id });
             return await _context.SaveChangesAsync().ToBooleanAsync();
         }
 
@@ -48,10 +53,17 @@ namespace MovieWeb.WebApi.Service
 
         public async Task<bool> UpdateAsync(PersonViewModel entity)
         {
+            var _entity = await _context.People.FirstOrDefaultAsync(x => x.Id == entity.Id);
+
+            if (_entity == null)
+            {
+                return false;
+            }
+
             if (!string.IsNullOrWhiteSpace(entity.Photo))
             {
                 var photo = Convert.FromBase64String(entity.Photo);
-                entity.Photo = await _localFileStorage.EditFile(photo, "jpg", nameof(Person), entity.Photo);
+                _entity.Photo = await _localFileStorage.EditFile(photo, "jpg", nameof(Person), _entity.Photo);
             }
             
             _context.People.Update(_mapper.Map<Person>(entity));

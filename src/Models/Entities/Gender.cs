@@ -10,6 +10,8 @@ namespace MovieWeb.WebApi.Model
         [Required(ErrorMessage = "El campo {0} es requerido")]
         public string Name { get; set; }
 
+        // public string Photo { get; set; }
+
         public ICollection<MovieGender> Movies { get; set; }
     }
 }
