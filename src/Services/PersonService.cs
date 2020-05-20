@@ -63,11 +63,16 @@ namespace MovieWeb.WebApi.Service
             if (!string.IsNullOrWhiteSpace(entity.Photo))
             {
                 var photo = Convert.FromBase64String(entity.Photo);
-                _entity.Photo = await _localFileStorage.EditFile(photo, "jpg", nameof(Person), _entity.Photo);
+                entity.Photo = await _localFileStorage.EditFile(photo, "jpg", nameof(Person), _entity.Photo);
             }
+            else 
+            {
+                await _localFileStorage.DeleteFile(_entity.Photo, nameof(Person));
+            }
+
+            _entity = _mapper.Map(entity, _entity);
             
-            _context.People.Update(_mapper.Map<Person>(entity));
-            return await _context.SaveChangesAsync().ToBooleanAsync();
+           return await _context.SaveChangesAsync().ToBooleanAsync();
         }
 
         private readonly IMapper _mapper;
