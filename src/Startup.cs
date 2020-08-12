@@ -1,5 +1,7 @@
 namespace MovieWeb.WebApi
 {
+    using System.Linq;
+    using System.Text.Json;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Configuration;
@@ -28,20 +30,27 @@ namespace MovieWeb.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services
+                .AddControllers()
+                .AddJsonOptions(options => 
+                { 
+                    options.JsonSerializerOptions.PropertyNamingPolicy = 
+                        SnakeCaseNamingPolicy.Instance;
+                });
 
             // Add CORS Aplication Support
-            services.AddCors(options =>
-            {
-                options.AddPolicy(allowSpecificOrigins,
-                builder =>
+            services
+                .AddCors(options =>
                 {
-                    builder
-                    .AllowAnyHeader()
-                    .AllowAnyMethod()
-                    .AllowAnyOrigin();
+                    options.AddPolicy(allowSpecificOrigins,
+                    builder =>
+                    {
+                        builder
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowAnyOrigin();
+                    });
                 });
-            });
 
             // Add Custom Service Application
             services
@@ -79,12 +88,30 @@ namespace MovieWeb.WebApi
             app.UseHttpsRedirection();
             app.UseRouting();
             
-            app.UseRouting();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+        }
+    }
+
+    public class SnakeCaseNamingPolicy : JsonNamingPolicy
+    {
+        public static SnakeCaseNamingPolicy Instance { get; } = new SnakeCaseNamingPolicy();
+
+        public override string ConvertName(string name)
+        {
+            // Conversion to other naming conventaion goes here. Like SnakeCase, KebabCase etc.
+            return name.ToSnakeCase();
+        }
+    }
+
+    public static class StringUtils
+    {
+        public static string ToSnakeCase(this string str)
+        {
+            return string.Concat(str.Select((x, i) => i > 0 && char.IsUpper(x) ? "_" + x.ToString() : x.ToString())).ToLower();
         }
     }
 }

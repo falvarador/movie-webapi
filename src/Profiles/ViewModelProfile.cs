@@ -8,7 +8,7 @@ namespace MovieWeb.WebApi.Profile
         public GenderViewModelProfile()
         {
             CreateMap<GenderViewModel, Gender>().ReverseMap();
-             CreateMap<InsertGenderViewModel, Gender>().ReverseMap();
+            CreateMap<InsertGenderViewModel, Gender>().ReverseMap();
         }
     }
 
