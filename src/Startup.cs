@@ -1,13 +1,12 @@
 namespace MovieWeb.WebApi
 {
-    using System.Linq;
-    using System.Text.Json;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Microsoft.Extensions.Logging;
+    using MovieWeb.WebApi.Common;
     using MovieWeb.WebApi.Extension;
     using MovieWeb.WebApi.Middleware;
 
@@ -43,13 +42,13 @@ namespace MovieWeb.WebApi
                 .AddCors(options =>
                 {
                     options.AddPolicy(allowSpecificOrigins,
-                    builder =>
-                    {
-                        builder
-                        .AllowAnyHeader()
-                        .AllowAnyMethod()
-                        .AllowAnyOrigin();
-                    });
+                        builder =>
+                        {
+                            builder
+                            .AllowAnyHeader()
+                            .AllowAnyMethod()
+                            .AllowAnyOrigin();
+                        });
                 });
 
             // Add Custom Service Application
@@ -94,24 +93,5 @@ namespace MovieWeb.WebApi
                 endpoints.MapControllers();
             });
         }
-    }
-
-    public class SnakeCaseNamingPolicy : JsonNamingPolicy
-    {
-        public static SnakeCaseNamingPolicy Instance { get; } = new SnakeCaseNamingPolicy();
-
-        public override string ConvertName(string name)
-        {
-            // Conversion to other naming conventaion goes here. Like SnakeCase, KebabCase etc.
-            return name.ToSnakeCase();
-        }
-    }
-
-    public static class StringUtils
-    {
-        public static string ToSnakeCase(this string str)
-        {
-            return string.Concat(str.Select((x, i) => i > 0 && char.IsUpper(x) ? "_" + x.ToString() : x.ToString())).ToLower();
-        }
-    }
+    }       
 }

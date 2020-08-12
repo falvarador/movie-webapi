@@ -4622,7 +4622,7 @@ components:
       anyOf: []
       required: []
       properties:
-        isSuccessful:
+        is_successful:
           type: boolean
           allOf: []
           oneOf: []
@@ -4640,7 +4640,7 @@ components:
           properties: {}
           enum: []
           nullable: true
-        httpStatusCode:
+        http_status_code:
           type: integer
           format: int32
           allOf: []
@@ -4650,7 +4650,7 @@ components:
           properties: {}
           additionalPropertiesAllowed: true
           enum: []
-        messageDetail:
+        message_detail:
           type: string
           readOnly: true
           allOf: []
@@ -4723,7 +4723,7 @@ components:
           properties: {}
           enum: []
           nullable: true
-        operationType:
+        operation_type:
           allOf: []
           oneOf: []
           anyOf: []
@@ -4808,7 +4808,7 @@ components:
           additionalPropertiesAllowed: true
           enum: []
           nullable: true
-        contractResolver:
+        contract_resolver:
           allOf: []
           oneOf: []
           anyOf: []
@@ -4848,7 +4848,7 @@ components:
       anyOf: []
       required: []
       properties:
-        personId:
+        person_id:
           type: integer
           format: int32
           allOf: []
@@ -4858,7 +4858,7 @@ components:
           properties: {}
           additionalPropertiesAllowed: true
           enum: []
-        movieId:
+        movie_id:
           type: integer
           format: int32
           allOf: []
@@ -4895,7 +4895,7 @@ components:
       oneOf: []
       anyOf: []
       required:
-      - releaseDate
+      - release_date
       - title
       properties:
         id:
@@ -4927,7 +4927,7 @@ components:
           additionalPropertiesAllowed: true
           enum: []
           nullable: true
-        isInTheaters:
+        is_in_theaters:
           type: boolean
           allOf: []
           oneOf: []
@@ -4946,7 +4946,7 @@ components:
           additionalPropertiesAllowed: true
           enum: []
           nullable: true
-        releaseDate:
+        release_date:
           type: string
           format: date-time
           allOf: []
@@ -4966,7 +4966,7 @@ components:
           additionalPropertiesAllowed: true
           enum: []
           nullable: true
-        shortTitle:
+        short_title:
           type: string
           allOf: []
           oneOf: []
@@ -5041,7 +5041,7 @@ components:
           properties: {}
           enum: []
           nullable: true
-        operationType:
+        operation_type:
           allOf: []
           oneOf: []
           anyOf: []
@@ -5118,7 +5118,7 @@ components:
           additionalPropertiesAllowed: true
           enum: []
           nullable: true
-        contractResolver:
+        contract_resolver:
           allOf: []
           oneOf: []
           anyOf: []
@@ -5208,7 +5208,7 @@ components:
           properties: {}
           enum: []
           nullable: true
-        operationType:
+        operation_type:
           allOf: []
           oneOf: []
           anyOf: []
@@ -5285,7 +5285,7 @@ components:
           additionalPropertiesAllowed: true
           enum: []
           nullable: true
-        contractResolver:
+        contract_resolver:
           allOf: []
           oneOf: []
           anyOf: []
